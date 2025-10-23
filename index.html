@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hoop Ref – Basketball Officiating Watch App</title>
+	<meta name="description" content="Possession and time-out tracking watch app for officiating youth basketball">
+	<link rel="icon" type="image/svg+xml" href="logo.svg">
+	<link rel="stylesheet" href="styles.min.css">
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900">
+	<!-- Header -->
+	<nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between items-center h-16">
+				<div class="flex items-center">
+					<img src="logo.svg" alt="Hoop Ref Logo" class="h-10 w-10 mr-3">
+					<span class="text-2xl font-bold text-gray-900 dark:text-white">Hoop Ref</span>
+				</div>
+				<div class="hidden md:flex space-x-8">
+					<a href="#features" class="text-gray-700 dark:text-gray-300 hover:text-hoop-orange transition">Features</a>
+					<a href="#pricing" class="text-gray-700 dark:text-gray-300 hover:text-hoop-orange transition">Pricing</a>
+					<a href="#faq" class="text-gray-700 dark:text-gray-300 hover:text-hoop-orange transition">FAQ</a>
+				</div>
+				<a href="https://apps.apple.com/us/app/hoop-ref/id000" class="bg-hoop-orange text-white px-6 py-2 rounded-full font-semibold hover:bg-hoop-orange-dark transition">
+					Download
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="gradient-bg text-white py-20 md:py-20">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div class="text-center">
+					<img src="logo.svg" alt="Hoop Ref Logo" class="h-24 w-24 mx-auto mb-6">
+					<h1 class="text-4xl md:text-6xl font-bold mb-6">
+						Hoop Ref
+					</h1>
+					<p class="text-xl md:text-2xl mb-6 text-white/90 mx-auto">
+						Basketball Officiating Watch App
+					</p>
+					<ul class="text-lg md:text-xl text-white/90 mb-6 mx-auto text-left list-disc w-fit">
+						<li>Alternating possession</li>
+						<li>Time-outs</li>
+						<li>Fitness tracking</li>
+					</ul>
+					<p class="mb-8 max-w-sm mx-auto">
+						Reliable officiating assistance for youth basketball games with unreliable scorer’s tables.
+					</p>
+					<a href="https://apps.apple.com/us/app/hoop-ref/id000" target="_blank" rel="noopener noreferrer" class="inline-block hover:opacity-80 transition mb-4">
+						<img src="download-app-store.svg" alt="Download on the App Store" class="h-14 mx-auto">
+					</a>
+					<p class="text-white/70 text-sm">
+						Requires Apple Watch with watchOS 10 or later
+					</p>
+				</div>
+
+				<div class="carousel-container max-w-[250px]">
+					<div class="carousel-slide">
+						<img src="screenshots/0.png" alt="Screenshot 0" class="w-full h-auto rounded-lg">
+					</div>
+					<div class="carousel-slide active">
+						<img src="screenshots/1.png" alt="Screenshot 1" class="w-full h-auto rounded-lg">
+					</div>
+					<div class="carousel-slide">
+						<img src="screenshots/2.png" alt="Screenshot 2" class="w-full h-auto rounded-lg">
+					</div>
+					<div class="carousel-slide">
+						<img src="screenshots/3.png" alt="Screenshot 3" class="w-full h-auto rounded-lg">
+					</div>
+					<div class="carousel-slide">
+						<img src="screenshots/4.png" alt="Screenshot 4" class="w-full h-auto rounded-lg">
+					</div>
+
+					<div class="carousel-indicators">
+						<span class="carousel-indicator" onclick="goToSlide(0)"></span>
+						<span class="carousel-indicator active" onclick="goToSlide(1)"></span>
+						<span class="carousel-indicator" onclick="goToSlide(2)"></span>
+						<span class="carousel-indicator" onclick="goToSlide(3)"></span>
+						<span class="carousel-indicator" onclick="goToSlide(4)"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features Section -->
+	<section id="features" class="py-20 bg-gray-50 dark:bg-gray-900">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+				Features
+			</h2>
+
+			<!-- Free Features -->
+			<div class="mb-16">
+				<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+					<!-- Simple & streamlined -->
+					<div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md feature-card">
+						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Fast and easy to use</h4>
+						<ul class="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
+							<li>Intuitive for basketball referees</li>
+							<li>No setup on phone or watch required</li>
+							<li>Just tap the teams’ colors and start officiating</li>
+						</ul>
+					</div>
+
+					<!-- Tracks alternating possession -->
+					<div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md feature-card">
+						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Tracks alternating possession</h4>
+						<ul class="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
+							<li>Haptics (wrist taps) confirm each change</li>
+						</ul>
+					</div>
+
+					<!-- Tracks time-outs -->
+					<div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md feature-card">
+						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Tracks time-outs</h4>
+						<ul class="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
+							<li>Times 30- and 60-second time-outs</li>
+							<li>Provides haptic feedback for first and second horn</li>
+							<li>Notes inbound possession following time-out</li>
+							<li>Counts time-outs used</li>
+						</ul>
+					</div>
+
+					<!-- Fitness & assists -->
+					<div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md feature-card">
+						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Fitness & assists</h4>
+						<ul class="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
+							<li>Workout tracking (calories, distance, steps, heart rate)</li>
+							<li>Reminders to turn on Do Not Disturb or a Focus</li>
+							<li>Haptic feedback for accurate 3-, 5-, and 10-second counts</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Paid Features -->
+			<div>
+				<div class="max-w-2xl mx-auto">
+					<div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md feature-card border-2 border-hoop-red-orange relative">
+						<div class="md:absolute md:top-4 md:right-4 flex justify-center md:block pro-badge-wrap -mt-2 mb-3 md:mt-0 md:mb-0">
+							<span class="pro-badge bg-hoop-red-orange/10 dark:bg-hoop-red-orange/20 text-hoop-red-orange dark:text-hoop-red-orange px-3 py-1 rounded-full text-xs font-semibold block md:inline-block uppercase">Pro Feature</span>
+						</div>
+						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3 text-center">Apple Health integration</h4>
+						<p class="text-gray-600 dark:text-gray-300 text-center">Automatically saves workouts to Apple Health after each game</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pricing Section -->
+	<section id="pricing" class="py-20 bg-white dark:bg-gray-800">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
+				Pricing
+			</h2>
+			<p class="text-center text-gray-600 dark:text-gray-400 mb-12">Free for everyone, upgrade when you’re ready</p>
+
+			<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+				<!-- Free Tier -->
+				<div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg border-2 border-hoop-orange dark:border-hoop-orange-light">
+					<h3 class="text-2xl font-bold text-hoop-orange dark:text-hoop-orange-light mb-2">Free</h3>
+					<p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">$0</p>
+					<ul class="space-y-3">
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Simple & streamlined</span>
+						</li>
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Tracks alternating possession</span>
+						</li>
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Tracks time-outs</span>
+						</li>
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Fitness & assists</span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Pro Tier -->
+				<div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg border-4 border-hoop-red-orange">
+					<h3 class="text-2xl font-bold text-hoop-red-orange mb-2">Pro</h3>
+					<p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">$9.99<span class="text-lg font-normal text-gray-600 dark:text-gray-400">/year</span></p>
+					<ul class="space-y-3 mb-6">
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Everything in free</span>
+						</li>
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Apple Health integration</span>
+						</li>
+						<li class="flex items-center">
+							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+							</svg>
+							<span class="text-gray-700 dark:text-gray-300">Automatic workout saving</span>
+						</li>
+					</ul>
+					<p class="text-sm text-gray-600 dark:text-gray-400 text-center italic">Available as in-app purchase with 1-month free trial</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section id="faq" class="py-20 bg-gray-50 dark:bg-gray-900">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+			<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+				Frequently Asked Questions
+			</h2>
+
+			<div class="space-y-6">
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What level of basketball is Hoop Ref designed for?</h3>
+					<p class="text-gray-600 dark:text-gray-300">Hoop Ref is designed for youth-level basketball, where the scorer’s table often does not reliably track alternating possession or time-outs. At higher levels, a watch may not be applicable. For example, the National Federation of High School Sports Basketball Officials Manual says in section 1.4(I), “Officials shall not wear jewelry, fitness bands or other items that are not necessary for performing their duties.”</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Does Hoop Ref make any sounds?</h3>
+					<p class="text-gray-600 dark:text-gray-300">The app plays haptics (wrist taps) for possession changes, time-out horns, and counting timing aids. Apple Watch requires that these also include sounds unless the watch is in silent mode. Most gyms are loud enough that the watch sounds are not audible.</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">How can I extend battery life?</h3>
+					<p class="text-gray-600 dark:text-gray-300">If officiating many games, you can turn off workout tracking to preserve battery life. However, without workout tracking, Apple Watch by default returns to the clock face when inactive for 2 minutes. To adjust, go to Settings > General > Return to Clock > Hoop Ref.</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What activity type is used for workouts?</h3>
+					<p class="text-gray-600 dark:text-gray-300">Hoop Ref workouts use the basketball activity type. While designed for playing basketball, that activity type is also a good fit for basketball officiating. We considered high-intensity interval training (HIIT), which better accounts for lulls in motion; however, it doesn’t use stride length calibration or steps as model inputs. The basketball activity type is also more intuitive when viewed in the Fitness or Health apps.</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Can Hoop Ref track workouts even without permission to read health data or save workouts?</h3>
+					<p class="text-gray-600 dark:text-gray-300">Yes. Tracking a workout session prevents Apple Watch from returning to the clock during a game. Without permissions, however, the workout won’t contain any health data or be saved to Apple Health.</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What happens if I forget to end a game?</h3>
+					<p class="text-gray-600 dark:text-gray-300">The workout automatically pauses after 30 minutes of inactivity.</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md" id="privacy-policy">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What is your privacy policy?</h3>
+					<p class="text-gray-600 dark:text-gray-300">This app does not collect, store, or share any personal data. Payments and refunds are processed securely through Apple’s in-app purchase system. We do not receive or retain your payment information or any identifying data. For details on Apple’s data handling, see <a href="https://www.apple.com/legal/privacy/" style="text-decoration: underline">Apple’s Privacy Policy</a>.</p>
+				</div>
+
+				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">How do I contact support?</h3>
+					<p class="text-gray-600 dark:text-gray-300">Experiencing a problem or have a suggestion? Let us know at <a href="mailto:support@hoopref.com" class="underline">support@hoopref.com</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-900 dark:bg-black text-gray-400 dark:text-gray-500 py-12">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center">
+				<div class="flex items-center justify-center mb-4">
+					<img src="logo.svg" alt="Hoop Ref Logo" class="h-8 w-8 mr-2">
+					<span class="text-xl font-bold text-white">Hoop Ref</span>
+				</div>
+				<p class="mb-4">Basketball Officiating Watch App</p>
+				<p class="text-sm">© 2025 Toolsay LLC. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

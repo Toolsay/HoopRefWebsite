@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 310 310" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<radialGradient cx="0" cy="0" gradientTransform="matrix(174.053 134.897 -93.4838 120.997 107.847 82.7745)" gradientUnits="userSpaceOnUse" id="RadialGradient" r="1">
+<stop offset="0" stop-color="#ffd52a"/>
+<stop offset="1" stop-color="#ff7f2a"/>
+</radialGradient>
+</defs>
+<g id="Ball">
+<g opacity="1">
+<path d="M20.4035 221.163C-16.1214 146.865 14.5353 56.9206 88.8331 20.4033C163.131-16.1213 253.075 14.5353 289.597 88.8337C326.121 163.132 295.465 253.076 221.167 289.594C146.936 326.086 57.0945 295.534 20.5005 221.356L20.4035 221.163Z" fill="url(#RadialGradient)" fill-rule="nonzero" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="4.924"/>
+<g opacity="1">
+<g opacity="1">
+<path d="M5.66908 139.99C29.3258 82.496 292.126 138.99 303.44 169.986" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="4.395"/>
+<path d="M191.147 9.20835C317.291 53.6649 258.831 289.928 140.384 304.42" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="4.395"/>
+<path d="M92.6938 18.5082C165.387 24.5075 213.157 132.495 290.529 93.4998" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="4.395"/>
+<path d="M26.553 234.478C129.618 249.976 266.518 106.497 275.761 244.976" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="4.395"/>
+</g>
+</g>
+</g>
+</g>
+<g id="Whistle">
+<path d="M263.925 132.467C259.207 132.467 254.85 133.875 251.131 136.21C246.967 106.181 219.73 84.324 189.123 84.324L173.657 84.324L155.604 120.431L155.604 84.324L47.2822 84.324L47.2822 132.467C47.2822 132.467 119.496 156.538 139.5 177.661C153.16 192.104 169.794 204.681 191.711 204.681C197.234 204.681 202.58 203.935 207.656 202.539C224.127 198.007 237.751 186.627 245.342 171.667C249.759 177.083 256.391 180.61 263.925 180.61C277.224 180.61 287.996 169.838 287.996 156.538C287.996 143.239 277.224 132.467 263.925 132.467Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</g>
+</svg>
