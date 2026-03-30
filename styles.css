@@ -11,6 +11,10 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
+section a {
+	text-decoration: underline;
+}
+
 .gradient-bg {
 	background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 100%);
 }
