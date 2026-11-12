@@ -32,49 +32,20 @@ section a {
 	color: #FF6B35;
 }
 
-.carousel-container {
-	position: relative;
-	width: 50%;
-	margin: 0 auto;
-	overflow: hidden;
-	border-radius: 1rem;
-}
-
-.carousel-slide {
-	display: none;
-	animation: fadeIn 0.5s ease-in-out;
-}
-
-.carousel-slide.active {
-	display: block;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-.carousel-indicators {
-	display: flex;
-	justify-content: center;
-	gap: 0.5rem;
-	margin-top: 1rem;
-}
-
-.carousel-indicator {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.5);
-	cursor: pointer;
-	transition: background 0.3s ease;
-}
-
-.carousel-indicator.active {
-	background: white;
+.hero { padding-block: 2rem; }
+.hero-layout { display: grid; gap: 2rem; align-items: center; }
+.hero-copy { min-width: 0; }
+.hero h1 { overflow-wrap: anywhere; }
+.carousel-container { width: min(100%, 280px); margin-inline: auto; text-align: center; }
+.carousel-slide[hidden] { display: none; }
+.carousel-slide img { width: 100%; height: auto; }
+/* Reserve space for the longest caption so screenshot controls stay in place. */
+.carousel-slide figcaption { min-height: 7rem; }
+.carousel-indicators { display: flex; justify-content: center; gap: .5rem; margin-top: 1rem; }
+.carousel-indicator { width: 44px; height: 44px; border: 1px solid currentColor; border-radius: 50%; cursor: pointer; }
+.carousel-indicator[aria-pressed="true"] { background: white; color: var(--color-hoop-orange-dark); }
+.carousel-indicator:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+@media (min-width: 768px) {
+	.hero { padding-block: 3rem; }
+	.hero-layout { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
 }

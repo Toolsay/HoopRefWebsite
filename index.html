@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hoop Ref – Basketball Officiating Watch App</title>
-	<meta name="description" content="Possession and time-out tracking watch app for officiating youth basketball">
+	<title>Hoop Ref – Basketball Referee App for Apple Watch</title>
+	<meta name="description" content="Free possession and time-out tracking for youth basketball officials on Apple Watch. One-time Pro upgrade adds workout saving to Apple Health.">
 	<link rel="icon" type="image/svg+xml" href="logo.svg">
 	<link rel="stylesheet" href="styles.min.css">
 </head>
@@ -32,57 +32,44 @@
 	</nav>
 
 	<!-- Hero Section -->
-	<section class="gradient-bg text-white py-20 md:py-20">
-		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-2 gap-12 items-center">
-				<div class="text-center">
-					<img src="logo.svg" alt="Hoop Ref Logo" class="h-24 w-24 mx-auto mb-6">
-					<h1 class="text-4xl md:text-6xl font-bold mb-6">
-						Hoop Ref
-					</h1>
-					<p class="text-xl md:text-2xl mb-6 text-white/90 mx-auto">
-						Basketball Officiating Watch App
-					</p>
-					<ul class="text-lg md:text-xl text-white/90 mb-6 mx-auto text-left list-disc w-fit">
-						<li>Alternating possession</li>
-						<li>Time-outs</li>
-						<li>Fitness tracking</li>
-					</ul>
-					<p class="mb-8 max-w-sm mx-auto">
-						Reliable officiating assistance for youth basketball games with unreliable scorer’s tables.
-					</p>
-					<a href="https://apps.apple.com/us/app/hoop-ref-basketball-officials/id6760874244" target="_blank" class="inline-block hover:opacity-80 transition mb-4">
-						<img src="download-app-store.svg" alt="Download on the App Store" class="h-14 mx-auto">
-					</a>
-					<p class="text-white/70 text-sm">
-						Requires Apple Watch with watchOS 11 or later
-					</p>
-				</div>
-
-				<div class="carousel-container max-w-[250px]">
-					<div class="carousel-slide">
-						<img src="screenshots/0.png" alt="Screenshot 0" class="w-full h-auto rounded-lg">
-					</div>
-					<div class="carousel-slide active">
-						<img src="screenshots/1.png" alt="Screenshot 1" class="w-full h-auto rounded-lg">
-					</div>
-					<div class="carousel-slide">
-						<img src="screenshots/2.png" alt="Screenshot 2" class="w-full h-auto rounded-lg">
-					</div>
-					<div class="carousel-slide">
-						<img src="screenshots/3.png" alt="Screenshot 3" class="w-full h-auto rounded-lg">
-					</div>
-					<div class="carousel-slide">
-						<img src="screenshots/4.png" alt="Screenshot 4" class="w-full h-auto rounded-lg">
-					</div>
-
-					<div class="carousel-indicators">
-						<span class="carousel-indicator" onclick="goToSlide(0)"></span>
-						<span class="carousel-indicator active" onclick="goToSlide(1)"></span>
-						<span class="carousel-indicator" onclick="goToSlide(2)"></span>
-						<span class="carousel-indicator" onclick="goToSlide(3)"></span>
-						<span class="carousel-indicator" onclick="goToSlide(4)"></span>
-					</div>
+	<section class="gradient-bg text-white hero">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 hero-layout">
+			<div class="hero-copy">
+				<h1 class="text-4xl md:text-6xl font-bold mb-6">Track possession and time-outs on Apple Watch</h1>
+				<p class="text-lg mb-6">Hoop Ref helps youth basketball officials keep track of alternating possession and team time-outs during a game.</p>
+				<p class="mb-6">Possession, time-outs, and workout tracking are free. Hoop Ref Pro adds automatic workout saving to Apple Health with a one-time purchase.</p>
+				<a href="https://apps.apple.com/us/app/hoop-ref-basketball-officials/id6760874244" target="_blank" class="inline-block hover:opacity-80 transition mb-4">
+					<img src="download-app-store.svg" alt="Download on the App Store" class="h-14">
+				</a>
+				<p class="text-sm">Requires Apple Watch with watchOS 11 or later</p>
+			</div>
+			<div class="carousel-container" role="region" aria-label="Hoop Ref screenshots">
+				<figure class="carousel-slide" id="screenshot-0">
+					<img src="screenshots/1.png" alt="Active game showing alternating possession and time-outs used by each team" width="280" height="440" class="w-full h-auto">
+					<figcaption class="mt-4">See alternating possession and time-outs used.</figcaption>
+				</figure>
+				<figure class="carousel-slide" id="screenshot-1" hidden>
+					<img src="screenshots/0.png" alt="Color choices for identifying the teams" width="280" height="440" class="w-full h-auto">
+					<figcaption class="mt-4">Choose team colors to start a game.</figcaption>
+				</figure>
+				<figure class="carousel-slide" id="screenshot-2" hidden>
+					<img src="screenshots/2.png" alt="Team selection for recording who called a time-out" width="280" height="440" class="w-full h-auto">
+					<figcaption class="mt-4">Record which team called the time-out and will have possession after the time-out.</figcaption>
+				</figure>
+				<figure class="carousel-slide" id="screenshot-3" hidden>
+					<img src="screenshots/3.png" alt="Running time-out with countdown and team time-out totals" width="280" height="440" class="w-full h-auto">
+					<figcaption class="mt-4">Time 30- and 60-second time-outs. See reminder of which team will inbound the ball.</figcaption>
+				</figure>
+				<figure class="carousel-slide" id="screenshot-4" hidden>
+					<img src="screenshots/4.png" alt="Workout metrics including calories, distance, steps, and heart rate" width="280" height="440" class="w-full h-auto">
+					<figcaption class="mt-4">Track your activity during the game.<p class="text-sm mt-2">Viewing workout metrics is free. Saving workouts to Apple Health requires Pro.</p></figcaption>
+				</figure>
+				<div class="carousel-indicators" aria-label="Choose a screenshot">
+					<button type="button" class="carousel-indicator" aria-label="See alternating possession and time-outs used." aria-controls="screenshot-0" aria-pressed="true">1</button>
+					<button type="button" class="carousel-indicator" aria-label="Choose team colors to start a game." aria-controls="screenshot-1" aria-pressed="false">2</button>
+					<button type="button" class="carousel-indicator" aria-label="Record which team called the time-out." aria-controls="screenshot-2" aria-pressed="false">3</button>
+					<button type="button" class="carousel-indicator" aria-label="Time 30- and 60-second time-outs." aria-controls="screenshot-3" aria-pressed="false">4</button>
+					<button type="button" class="carousel-indicator" aria-label="Track your activity during the game." aria-controls="screenshot-4" aria-pressed="false">5</button>
 				</div>
 			</div>
 		</div>
@@ -103,8 +90,8 @@
 						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Fast and easy to use</h4>
 						<ul class="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
 							<li>Intuitive for basketball referees</li>
-							<li>No setup on phone or watch required</li>
 							<li>Just tap the teams’ colors and start officiating</li>
+							<li>See alternating possession, time-out countdown, and time-outs used at a glance</li>
 						</ul>
 					</div>
 
@@ -112,7 +99,7 @@
 					<div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md feature-card">
 						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Tracks alternating possession</h4>
 						<ul class="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
-							<li>Tap a button or use <a href=”https://support.apple.com/guide/watch/use-double-tap-for-common-actions-apdabb7b275c/watchos”>double tap</a> to alternate possession</li>
+							<li>Tap a button or use <a href="https://support.apple.com/guide/watch/use-double-tap-for-common-actions-apdabb7b275c/watchos">double tap</a> on supported Apple Watch models to alternate possession</li>
 							<li>Haptics (wrist taps) confirm each change</li>
 						</ul>
 					</div>
@@ -147,7 +134,7 @@
 						<div class="md:absolute md:top-4 md:right-4 flex justify-center md:block pro-badge-wrap -mt-2 mb-3 md:mt-0 md:mb-0">
 							<span class="pro-badge bg-hoop-red-orange/10 dark:bg-hoop-red-orange/20 text-hoop-red-orange dark:text-hoop-red-orange px-3 py-1 rounded-full text-xs font-semibold block md:inline-block uppercase">Pro Feature</span>
 						</div>
-						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3 text-center">Apple Health integration</h4>
+						<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-3 text-center">Save game workouts to Apple Health</h4>
 						<p class="text-gray-600 dark:text-gray-300 text-center">Automatically saves workouts to Apple Health after each game</p>
 					</div>
 				</div>
@@ -199,7 +186,7 @@
 				<!-- Pro Tier -->
 				<div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg border-4 border-hoop-red-orange">
 					<h3 class="text-2xl font-bold text-hoop-red-orange mb-2">Pro</h3>
-					<p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">$10</p>
+					<p class="text-4xl font-bold text-gray-900 dark:text-white mb-6">US$10</p>
 					<ul class="space-y-3 mb-6">
 						<li class="flex items-center">
 							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -211,7 +198,7 @@
 							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
 								<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
 							</svg>
-							<span class="text-gray-700 dark:text-gray-300">Apple Health integration</span>
+							<span class="text-gray-700 dark:text-gray-300">Save workouts to Apple Health</span>
 						</li>
 						<li class="flex items-center">
 							<svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -220,7 +207,7 @@
 							<span class="text-gray-700 dark:text-gray-300">Automatic workout saving</span>
 						</li>
 					</ul>
-					<p class="text-sm text-gray-600 dark:text-gray-400 italic">Available through an in-app purchase</p>
+					<p class="text-sm text-gray-600 dark:text-gray-400 italic">One-time purchase in the App Store. Prices vary by country.</p>
 				</div>
 			</div>
 		</div>
@@ -236,7 +223,7 @@
 			<div class="space-y-6">
 				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
 					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What level of basketball is Hoop Ref designed for?</h3>
-					<p class="text-gray-600 dark:text-gray-300">Hoop Ref is designed for youth-level basketball, where the scorer’s table often does not reliably track alternating possession or time-outs. At higher levels, a watch may not be applicable. For example, the National Federation of High School Sports Basketball Officials Manual says in section 1.4(I), “Officials shall not wear jewelry, fitness bands or other items that are not necessary for performing their duties.”</p>
+					<p class="text-gray-600 dark:text-gray-300">Hoop Ref is designed for youth basketball officials to track alternating possession and time-outs. Some competitions, especially at higher levels, restrict what officials can wear, so check your competition’s rules before wearing a watch while officiating. For example, section 1.4(I) of the National Federation of State High School Associations (NFHS) Basketball Officials Manual states, “Officials shall not wear jewelry, fitness bands or other items that are not necessary for performing their duties.”</p>
 				</div>
 
 				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
@@ -246,7 +233,7 @@
 
 				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
 					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">How can I extend battery life?</h3>
-					<p class="text-gray-600 dark:text-gray-300">If officiating many games, you can turn off workout tracking to preserve battery life. However, without workout tracking, Apple Watch by default returns to the clock face when inactive for 2 minutes. To adjust, go to Settings > General > Return to Clock > Hoop Ref.</p>
+					<p class="text-gray-600 dark:text-gray-300">Turning off workout tracking in Hoop Ref can help preserve battery life when officiating several games. Without an active workout, Apple Watch may return to the clock face after 2 minutes of inactivity, depending on your settings. To keep Hoop Ref visible longer without tracking a workout, open Settings > General > Return to Clock > Hoop Ref on your watch, choose Custom, then After 1 hour.</p>
 				</div>
 
 				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
@@ -266,7 +253,7 @@
 
 				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md" id="privacy-policy">
 					<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What is your privacy policy?</h3>
-					<p class="text-gray-600 dark:text-gray-300">This app does not collect, store, or share any personal data. Subscriptions, payments, and refunds are processed by Apple through the App Store. We do not receive or retain your payment information or any identifying data. For details on Apple’s data handling, see <a href="https://www.apple.com/legal/privacy/" style="text-decoration: underline">Apple’s Privacy Policy</a>.</p>
+					<p class="text-gray-600 dark:text-gray-300">This app does not collect, store, or share any personal data. Purchases and refunds are processed by Apple through the App Store. We do not receive or retain your payment information or any identifying data. For details on Apple’s data handling, see <a href="https://www.apple.com/legal/privacy/" style="text-decoration: underline">Apple’s Privacy Policy</a>.</p>
 				</div>
 
 				<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
