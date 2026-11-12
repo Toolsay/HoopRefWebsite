@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-12",
+  "framework": "vanilla HTML with Tailwind v4 CLI",
+  "fonts": "system body stack",
+  "palette": "Hoop orange",
+  "motion": "no library",
+  "preserve": ["orange brand", "system body font", "content", "screenshot order"]
+}
