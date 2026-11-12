@@ -14,13 +14,13 @@ npm ci
 
 Commit `package.json` and `package-lock.json` when changing dependencies. `node_modules/` is ignored.
 
-Start the development server:
+Start the development server and file watcher from the repository root:
 
 ```sh
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally [localhost:5173](http://localhost:5173)). Vite updates styles or reloads the page as you edit.
+Open the local URL printed by Vite (normally [localhost:5173](http://localhost:5173)). Leave this command running while you edit: Vite watches the source files, recompiles changes as needed, and updates styles or reloads the page automatically. Stop the watcher with Ctrl+C. You do not need to rerun `npm run build` for each edit when using the development server.
 
 | File | Purpose |
 | --- | --- |
