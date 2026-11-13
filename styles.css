@@ -4,6 +4,10 @@
 @import "tailwindcss";
 @import "./tokens.css";
 
+:root {
+	color-scheme: light dark;
+}
+
 @theme {
 	--color-hoop-orange: #FF6B35;
 	--color-hoop-orange-dark: #E55A2B;
