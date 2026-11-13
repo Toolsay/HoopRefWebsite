@@ -88,7 +88,7 @@ body .hero h1 { font-size: var(--text-display-s); max-width: 17ch; margin-bottom
 body .carousel-container { width: min(100%, 280px); }
 body .carousel-slide figcaption { color: var(--color-court-muted); font-size: var(--text-sm); min-height: 7rem; padding-top: var(--space-md); margin-top: var(--space-sm); border-top: var(--rule-thin) solid var(--color-court-rule); }
 body .carousel-indicators { gap: var(--space-sm); margin-top: var(--space-sm); }
-body .carousel-indicator { border: var(--rule-thin) solid var(--color-court-rule); border-radius: var(--radius-sm); color: var(--color-court-ink); background: var(--color-clear); font-variant-numeric: tabular-nums; transition: transform var(--dur-press) var(--ease-out); }
+body .carousel-indicator { border: var(--rule-thin) solid var(--color-court-muted); border-radius: var(--radius-sm); color: var(--color-court-ink); background: var(--color-court); font-variant-numeric: tabular-nums; transition: transform var(--dur-press) var(--ease-out); }
 body .carousel-indicator[aria-pressed="true"] { background: var(--color-orange); color: var(--color-court); border-color: var(--color-orange); font-weight: 700; }
 body .carousel-indicator:hover { border-color: var(--color-orange); }
 body .carousel-indicator:active { transform: translateY(1px); }
@@ -134,4 +134,20 @@ body footer p { margin-bottom: var(--space-sm); }
 }
 @media (prefers-reduced-motion: reduce) {
   body *, body *::before, body *::after { transition: none; animation: none; }
+}
+
+/* Hallmark · courtside hero · pre-emit critique: P5 H4 E4 S5 R5 V4 */
+body .hero { position: relative; isolation: isolate; overflow: clip; padding-block: var(--space-3xl); }
+.hero-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% center; z-index: -2; }
+.hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--color-hero-shade), var(--color-hero-shade-soft)); }
+body .hero h1 { max-width: 16ch; }
+.hero h1::before { content: ''; display: block; width: 4rem; height: .25rem; background: var(--color-orange); margin-bottom: var(--space-lg); }
+.hero h1 span { display: block; margin-top: var(--space-lg); }
+@media (min-width: 48rem) {
+  body .hero-layout { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
+}
+@media (max-width: 47.999rem) {
+  body .hero { padding-block: var(--space-2xl); }
+  .hero::before { background: linear-gradient(180deg, var(--color-hero-shade) 20%, var(--color-hero-shade-soft)); }
+  .hero-backdrop { object-position: 70% bottom; }
 }

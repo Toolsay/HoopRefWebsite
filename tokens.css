@@ -12,6 +12,8 @@
   --color-court-muted: oklch(78% .018 65);
   --color-court-rule: oklch(37% .018 55);
   --color-clear: transparent;
+  --color-hero-shade: oklch(12% .012 55 / .9);
+  --color-hero-shade-soft: oklch(12% .012 55 / .28);
   --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   --space-xs: .25rem;
